@@ -1,0 +1,575 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Merriweather", serif;
+}
+
+:root {
+    --brown: rgba(0, 0, 0, 0.9);
+    --br: rgb(117, 87, 2);
+}
+
+/* Navigation bar */
+
+nav ul {
+    list-style: none;
+}
+
+.active {
+    color: rgb(122, 91, 5);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+
+}
+
+.logo {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 130px;
+    height: 130px;
+    float: left;
+
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.home a {
+    color: whitesmoke;
+    border: 1px solid;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login a{
+    display: none;
+}
+.checkbtn {
+    color: #ffff;
+    font-size: 35px;
+    cursor: pointer;
+    float: right;
+    display: none;
+
+
+}
+
+
+#check {
+    display: none;
+}
+
+.icons a {
+    font-size: 45px;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 20px;
+
+
+}
+
+.icons a:hover {
+    color: var(--br);
+}
+
+
+/*Home Page Header Content*/
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pexels-danne-516541.jpg);
+
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+}
+
+.header-content {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+.header-content p {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.header-content h1 {
+    font-size: 90px;
+    line-height: 130px;
+
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+   
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.header-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+@media screen and (max-width: 440px){
+    .header-content h1 {
+        font-size: 20px;
+        line-height: 30px;
+        -webkit-text-stroke: 1px #fff;
+    }
+
+    .header-content p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .header-content h2 {
+        font-size: 3px;
+
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .header-content {
+        margin-left: 20px;
+        margin-top: 120px;
+
+    }
+
+    .header-content h1 {
+        font-size: 50px;
+        line-height: 70px;
+        -webkit-text-stroke: 2px #fff;
+    }
+
+    .header-content p {
+        font-size: 20px;
+        
+    }
+
+    .header-content h2 {
+        font-size: 30px;
+
+    }
+
+    
+
+}
+
+
+
+.ctn {
+    padding: 8px 15px;
+    background-color: var(--brown);
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+} 
+/*Intro*/
+section {
+    width: 80%;
+    margin: 60px auto;
+
+}
+
+.title {
+    text-align: center;
+    
+
+}
+.title h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.title p{
+    font-size: 20px;
+
+}
+/*Bullet points list*/
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/explore.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.explore-content {
+    width: 70%;
+    padding: 30px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.445);
+
+
+
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+
+    color: #fff;
+
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+.explore-content p {
+    font-size: 4vmin;
+    color: rgb;
+}
+
+.explore-content ul {
+    font-size: 3vmin;
+    margin: 60px;
+
+}
+
+.explore-content .ctn {
+    margin: 40px;
+
+}
+
+/*Numbered list*/
+.row {
+    padding: 0;
+}
+
+.content-col {
+    width: 40%;
+
+
+}
+
+.image-col {
+    width: 60%;
+
+}
+
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+
+
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+    color: var(--green);
+
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+    font-size: 4vmin;
+}
+
+/*footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2rem 16vw;
+}
+
+.newslatter h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.newslatter span:nth-child(2) {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.newslatter form {
+    margin: 20px 0;
+}
+
+.newslatter form input {
+    height: 40px;
+    width: 17vw;
+    padding: 0 15px;
+    outline: none;
+}
+
+.newslatter form button {
+    height: 40px;
+    width: 5rem;
+    color: #fff;
+    background-color: red;
+    border: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.social-icons li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+.social-icons li a:hover {
+    color: white;
+}
+
+hr {
+    background-color: gray;
+    border: 1px solid gray;
+    margin: 30px 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.footer-logo {
+    letter-spacing: 2px;
+    font-size: 'Potta one', cursive;
+    text-shadow: 0 20px 6px red;
+}
+
+.links {
+    margin: 10px 0;
+    margin: 4px 0;
+}
+
+.links li a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.links li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s ease;
+}
+
+.copyright {
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+/* Mobile device */
+
+@media screen and (max-width: 990px) {
+    nav {
+        padding: 0px 50px;
+        z-index: 1;
+    }
+
+    .checkbtn {
+        display: block;
+        transition: transform .3s ease;
+        padding: 30px;
+
+    }
+
+    
+    .login a{
+        display: block;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .icons{
+        display: none;
+    }
+    .active {
+        color: black;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+    }
+
+    .logo {
+        
+        width: 100px;
+        height: 100px;
+        float: left;
+        padding: 10px
+    
+    }
+
+    .nav-links {
+        display: block;
+
+    }
+
+    .nav-links li a{
+        color: black;
+    }
+
+    .nav-links li a:hover{
+        background-color: rgba(0, 0, 0, 0.425);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+    /*Additional sub-section*/
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    /*Bullet point list*/
+    .explore-content {
+        width: 100%;
+        margin-top: 0;
+
+    }
+
+    /*Numbered list*/
+    .tours .content-col {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+
+    /*footer*/
+
+    /* footer{
+    padding: 10px;
+   } */
+
+}
+
+/*Animations*/
+.row img {
+    transition: transform .3s ease;
+
+}
+
+.row img:hover {
+    transform: scale(1.1);
+
+
+}
+
+.ctn:hover {
+    background: black;
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.76);
+}
+
+
+.nav-links a:hover{
+    background-color: rgba(253, 248, 248, 0.541);
+}

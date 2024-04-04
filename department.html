@@ -1,0 +1,202 @@
+<!DOCTYPE html <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/lgblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="department.css">
+    <!--goggle fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Beau+Rivage&family=Elsie:wght@900&family=Great+Vibes&family=Lilita+One&family=Merriweather:ital,wght@0,300;1,300&family=Rubik+Maps&family=Rubik+Mono+One&family=Rubik+Scribble&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <title>SrilankaWildWonder/Department</title>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menifest link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Include alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="images/lg.png" alt="logo" class="logo">
+        <ul class="nav-links" id="navbarList">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="home"><a href="leopard.html">Leopard</a></li>
+            <li class="home"><a href="department.html">Expoler</a></li>
+            <li class="home"><a href="introduction.html">Introduction</a></li>
+            <li class="home"><a href="Animalssl.html">Animals</a></li>
+            
+        </ul>
+    </nav>
+    <!--header-->
+    <div x-data="headerData">
+        <header>
+            <section class="header-content">
+                <h2 x-text="title"></h2>
+                <div class="line"></div>
+                <h1 x-text="bigTitle"></h1>
+                <a href="#introduction" class="ctn">Learn More</a>
+            </section>
+        </header>
+        <!-- Department of Wildlife Conservation Page Content -->
+        <main>
+            <section class="introduction" id="introduction">
+                <h2 x-text="descriptionTitle"></h2>
+                <!-- Brief introduction content -->
+                <p x-text="description"></p>
+            </section>
+    </div>
+
+        <section class="gallery" id="introduction">
+            <h1>Protected Areas</h1>
+            <!-- Flexbox gallery showcasing protected areas -->
+            <section class="row">
+                <section class="col">
+                    <img src="images/imga1.jpeg" alt="elephant">
+                    <h2>Yala National Park</h2>
+                </section>
+                <section class="col">
+                    <img src="images/imga2.jpg" alt="">
+                    <h2>Udawalawe National Park</h2>
+                </section>
+                <section class="col">
+                    <img src="images/imga3.jpg" alt="">
+                    <h2>Wilpattu National Park:</h2>
+                </section>
+                <section class="col">
+                    <img src="images/imga4.jpg" alt="">
+                    <h2>Sinharaja Forest Reserve</h2>
+                </section>
+                <section class="col">
+                    <img src="images/imga5.jpg" alt="">
+                    <h2>Minneriya National Park:</h2>
+                </section>
+                <section class="col">
+                    <img src="images/imga6.jpg" alt="">
+                    <h2>Horton Plains National Park:</h2>
+                </section>
+            </section>
+        </section>
+
+        <section class="map">
+
+            <h2>Department Location</h2>
+            <!-- location map content -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014239.6600704561!2d79.29467374687499!3d6.785224200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3bdf9a5a54941%3A0xc4a5f756de2bc6f5!2sDepartment%20of%20Wildlife%20Conservation%20(Peak%20Wildness%20Range%20Office)!5e0!3m2!1sen!2slk!4v1703926691898!5m2!1sen!2slk"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="newslatter">
+            <h2>
+                <span>Subscribe Newslatter</span>
+                <span>Subscribe Newslatter to get more updates</span>
+            </h2>
+            <form action="?">
+                <input type="email" placeholder="Enter Your email">
+                <button type="submit">Submit</button>
+            </form>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2 class="footer logo"><img src="./images/lg.png" alt="logo" class="logo"></h2>
+            <div class="list">
+                <ul >
+                    <li class="#"><a href="./leopard.html">Leopard</a></li>
+                    <li class="#"><a href="./department.html">Explore</a></li>
+                    <li class="#"><a href="./introduction.html">Introduction</a></li>
+                    <li class="#"><a href="./Animalssl.html">Animals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023 All rights reserved | SriLankaWildWonder</p>
+        </div>
+    </footer>
+
+    <script>
+        // fetch the JSON
+        const headerData = {};
+        fetch('department.json')
+            .then(response => response.json())
+            .then(data => {
+                headerData.title = data[0].title;
+                headerData.bigTitle = data[0].bigTitle;
+                headerData.descriptionTitle = data[0].descriptionTitle;
+                headerData.description = data[0].description;
+
+                localStorage.setItem('headerData',JSON.stringify(headerData));
+            })
+            .catch(
+                error => console.error('Error fetching data:', error)
+            )
+
+              </script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!--content
+    https://www.wikipedia.org/-->
+<!--Images
+     www.pexels.com-->
+<!--Maps
+      www.google.com/maps-->
+
+
+</html>

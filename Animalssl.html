@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/lgblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="Animalssl.css">
+    <!--goggle fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Beau+Rivage&family=Elsie:wght@900&family=Great+Vibes&family=Lilita+One&family=Merriweather:ital,wght@0,300;1,300&family=Rubik+Maps&family=Rubik+Mono+One&family=Rubik+Scribble&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <title>SrilankaWildWonder/AnimalsInSrilanka</title>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menifest link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+     <!-- Include alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html"><img src="./images/lg.png" alt="logo" class="logo"></a>
+        <ul class="nav-links">
+            <li class="home"><a href="./leopard.html">Leopard</a></li>
+            <li class="home"><a href="./department.html">Explore</a></li>
+            <li class="home"><a href="./introduction.html">Introduction</a></li>
+            <li class="home"><a href="./Animalssl.html">Animals</a></li>
+            <li class="login"><a href="./login.html">Login</a></li>
+        </ul>
+        <div class="icons">
+            <a href="./index.html" class="fas fa-home"></a>
+            <a href="./login.html" class="fas fa-user"></a>
+        </div>
+    </nav>
+    <!--header-->
+    <header>
+        <div class="header-content" x-data="headerContent">
+            <h2 x-text="headerTitle"></h2>
+            <div class="line"></div>
+            <h1 x-text="headerSubTitle"></h1>
+            <a href="#title" class="ctn">Learn More</a>
+
+        </div>
+    </header>
+    
+    <!--introduction-->
+    <main>
+
+        
+
+        <!--Additional sub-section-->
+        <div x-data="titleData">
+            <section class="title" id="title">
+                <h1 x-text="titleOne"></h1>
+                <div class="line"></div>
+                <p x-text="titlePara"></p>
+            </section>
+        </div>
+
+        <div x-data="subSectionData">
+            <section class="bgimage">
+            <section class="sub-section" id="title">
+                <section class="row">
+                    <section class="col">
+                        <img src="images/elephant.jpg" alt="elephant">
+                        <h4 x-text="section1"></h4>
+                        <p x-text="section1Para"></p>
+                        <a href="https://www.bing.com/ck/a?!&&p=83cfc38881221882JmltdHM9MTcwNDg0NDgwMCZpZ3VpZD0xYWQ4MTZiNy0zM2ZkLTYyNjgtMjZlMC0wNTk1MzJhNzYzZDYmaW5zaWQ9NTMwMg&ptn=3&ver=2&hsh=3&fclid=1ad816b7-33fd-6268-26e0-059532a763d6&psq=Majestic+Elephants+in+srilanka&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU3JpX0xhbmthbl9lbGVwaGFudA&ntb=1" class="ctn">Learn More</a>
+                    </section>
+                    <section class="col">
+                        <img src="images/leopard.jpg" alt="leopard">
+                        <h4 x-text="section2"></h4>
+                        <p x-text="section2Para"></p>
+                        <a href="https://www.bing.com/ck/a?!&&p=86a70ab7968073a3JmltdHM9MTcwNDg0NDgwMCZpZ3VpZD0xYWQ4MTZiNy0zM2ZkLTYyNjgtMjZlMC0wNTk1MzJhNzYzZDYmaW5zaWQ9NTI0Mw&ptn=3&ver=2&hsh=3&fclid=1ad816b7-33fd-6268-26e0-059532a763d6&psq=Elusive+Leopards+in+srilanka&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU3JpX0xhbmthbl9sZW9wYXJk&ntb=1" target="_blank" class="ctn">Learn More</a>
+                    </section>
+                    <section class="col">
+                        <img src="images/bird.jpg" alt="bird">
+                        <h4 x-text="section3"></h4>
+                        <p x-text="section3Para"></p>
+                        <a href="https://www.bing.com/ck/a?!&&p=49a2a63dffe87c43JmltdHM9MTcwNDg0NDgwMCZpZ3VpZD0xYWQ4MTZiNy0zM2ZkLTYyNjgtMjZlMC0wNTk1MzJhNzYzZDYmaW5zaWQ9NTIxOQ&ptn=3&ver=2&hsh=3&fclid=1ad816b7-33fd-6268-26e0-059532a763d6&psq=birds+in+srilanka&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGlzdF9vZl9iaXJkc19vZl9TcmlfTGFua2E&ntb=1" class="ctn">Learn More</a>
+                    </section>
+                </section>
+            </section>   
+                </section>
+        </div> 
+        <!--link wilpattu and yala pages-->
+        <section class="links">
+            
+            <section class="top">
+            <h1>Yala National Park</h1>
+           <section class="link">
+            
+             <a href="yala.html" ><img src="images/YALA2.jpg" alt="Yala"></a>
+             
+           </section>
+            </section>
+            <section class="top">
+             <h1>Wilpattu National Park</h1>
+             <section class="link">
+                
+            <a href="wilpattu.html"><img src="images/wilpattu2.jpg" alt="Wilpattu"></a>
+             
+             </section>
+            </section>
+           
+        </section>
+   
+    </main>
+
+
+    <!--footer-->
+    <footer>
+        <div class="newslatter">
+            <h2>
+                <span>Subscribe Newslatter</span>
+                <span>Subscribe Newslatter to get more updates</span>
+            </h2>
+            <section id="newsletter" class="col-2">
+                <form id="subscribeForm">
+                    <input type="email" id="emailInput" placeholder="Enter your email">
+
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="main">
+            <h2 class="footer logo"><img src="./images/lg.png" alt="logo" class="logo"></h2>
+            <div class="list">
+
+
+
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li class="#"><a href="./leopard.html">Leopard</a></li>
+                    <li class="#"><a href="./department.html">Explore</a></li>
+                    <li class="#"><a href="./introduction.html">Introduction</a></li>
+                    <li class="#"><a href="./Animalssl.html">Animals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023 All rights reserved | SriLankaWildWonder</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        const headerContent = {};
+        const titleData = {};
+        const subSectionData = {};
+        const adventureData = {};
+
+        fetch('Animal.json')
+            .then(response => response.json())
+            .then(data => {
+                headerContent.headerTitle = data[0].headerTitle;
+                headerContent.headerSubTitle = data[0].headerSubTitle;
+                titleData.titleOne = data[1].titleOne;
+                titleData.titlePara = data[1].titlePara;
+                subSectionData.section1 = data[2].section1;
+                subSectionData.section1Para = data[2].section1Para;
+                subSectionData.section2 = data[2].section2;
+                subSectionData.section2Para = data[2].section2Para;
+                subSectionData.section3 = data[2].section3;
+                subSectionData.section3Para = data[2].section3Para;
+
+
+                localStorage.setItem('headerContent',JSON.stringify(headerContent));
+                localStorage.setItem('titleData',JSON.stringify(titleData));
+                localStorage.setItem('subSectionData',JSON.stringify(subSectionData));
+                localStorage.setItem('adventureData',JSON.stringify(adventureData));
+
+            })
+            .catch(
+                error => console.error('Error fetching data:', error)
+            )
+
+            //NewsLatter Function
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Gets the email input element
+            const emailInput = document.getElementById('emailInput');
+            // Gets the subscription form element
+            const subscribeForm = document.getElementById('subscribeForm');
+
+            subscribeForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                // Gets the trimmed value of the email input
+                const email = emailInput.value.trim();
+                // Checks if email is not empty
+                if (email) {
+                    // Gets existing subscriptions from local storage or initializes an empty array
+                    let subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || [];
+                    // Adds the new email to the subscriptions array
+                    subscriptions.push(email);
+                    // Stores the updated subscriptions array in local storage
+                    localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                    // Clears the email input field
+                    emailInput.value = '';
+                    // Alert the user about successful subscription
+                    alert('You have successfully subscribed!');
+                }
+            });
+
+            // Initialize subscriptions from localStorage
+            //// Immediately invoked function expression to initialize subscriptions
+            (function init() {
+                // Gets subscriptions from local storage
+                const storedSubscriptions = localStorage.getItem('newsletterSubscriptions');
+                // Checks if subscriptions exist in local storage
+                if (storedSubscriptions) {
+                    // Parses the subscriptions from JSON
+                    const subscriptions = JSON.parse(storedSubscriptions);
+                    // Logs the subscriptions to the console
+                    console.log(subscriptions);
+                }
+            })();
+        });
+
+
+    </script>
+
+
+
+</body>
+ <!--content
+    https://www.wikipedia.org/-->  
+  <!--Images
+     www.pexels.com-->
+  <!--Maps
+      www.google.com/maps-->
+
+</html>

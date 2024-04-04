@@ -1,0 +1,34 @@
+[
+    {
+        "title":"Minneriya National Park",
+        "list":[
+            "Location: North Central Province, Sri Lanka.",
+            "Size:Approximately 8,890 hectares.",
+            "Wildlife: Famous for the annual 'Gathering' of hundreds of elephants.",
+            "Biodiversity: Home to sambar deer, leopards, and diverse bird species.",
+            "Safaris: Jeep safaris provide an exciting exploration of the park.",
+            "Landscapes: Varied terrain, including open grasslands and dense forests."
+        ]
+    },
+    {
+        "rowOne1":"Category",
+        "rowOne2":"Example Species",
+        "rowOne3":"Intresting Facts",
+        "rowTwo1":"Mammals",
+        "rowTwo2":"Asian Elephant, Spotted Deer",
+        "rowTwo3":"- Asian Elephants in Minneriya exhibit complex social behaviors, and the Gathering is a remarkable display of their interactions and communication. ",
+        "rowTwo33":"- Spotted Deer are key prey for predators in the park, contributing to the delicate balance of the ecosystem. ",
+        "rowThree1":"Birds",
+        "rowThree2":" Sri Lanka Blue Magpie, Layard's Parakeet",
+        "rowThree3":"- Sri Lanka Blue Magpie is known for its intelligence and vocal mimicry skills.",
+        "rowThree33":"-  Painted Storks in Minneriya engage in fascinating courtship displays, involving bill-clattering and synchronized movements. ",
+        "rowFour1":"Reptiles ",
+        "rowFour2":"Mugger Crocodile, Indian Python",
+        "rowFour3":"- Mugger Crocodiles are opportunistic predators, and their presence in the park indicates a healthy aquatic ecosystem.",
+        "rowFour33":" -  Indian Pythons are crucial for maintaining a balanced prey-predator relationship, and their presence contributes to the park's overall biodiversity.",
+        "rowFive1":" Amphibians ",
+        "rowFive2":"  Indian Bullfrog, Wrinkled Frog ",
+        "rowFive3":"- Indian Bullfrogs are known for their distinct vocalizations, contributing to the chorus of sounds in Minneriya during the monsoon season.",
+        "rowFive33":"- Wrinkled Frogs, with their textured skin, are indicators of environmental health, as they are sensitive to changes in their habitat."
+    }
+]

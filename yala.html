@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/lgblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="yala.css">
+    <!--goggle fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Beau+Rivage&family=Elsie:wght@900&family=Great+Vibes&family=Lilita+One&family=Merriweather:ital,wght@0,300;1,300&family=Rubik+Maps&family=Rubik+Mono+One&family=Rubik+Scribble&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <title>SrilankaWildWonder/AnimalsInSrilanka/YalaNAtionalPark</title>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menifest link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+     <!-- Include alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+<section class="bgimage">
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html"><img src="images/lg.png" alt="logo" class="logo"></a>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="home"><a href="leopard.html">Leopard</a></li>
+                <li class="home"><a href="department.html">Expoler</a></li>
+                <li class="home"><a href="introduction.html">Introduction</a></li>
+                <li class="home"><a href="Animalssl.html">Animals</a></li>
+
+            </ul>
+        </nav>
+        <!--Intro-->
+        <section class="start" x-data="header">
+            <section class="head">
+                <h1 x-text="title"></h1>
+                <p x-text="titlePara"></p>
+            </section>
+
+        </section>
+        <!--yala national park animals-->
+
+        <div class="container" x-data="card">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/yala1 Sloth Bear.jpg" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h2 x-text="cardOne"></h2>
+                        <p x-text="cardOnePara"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/yala2 Crocodiles.jpg" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h2 x-text="cardTwo"></h2>
+                        <p x-text="cardTwoPara"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/yala3 Sambar Deer (Rusa unicolor).jpg" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h2 x-text="cardThree"></h2>
+                        <p x-text="cardThreePara"></p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!--Google Map -->
+        <section class="map">
+
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71723.09094068439!2d81.40122377275608!3d6.491197386344437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae683b969aec5c7%3A0x7e3aa2da875d927e!2sYala%20National%20Park%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1705369581382!5m2!1sen!2slk"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <div class="newslatter">
+                <h2>
+                    <span>Subscribe Newslatter</span>
+                    <span>Subscribe Newslatter to get more updates</span>
+                </h2>
+                <form action="?">
+                    <input type="email" placeholder="Enter Your email">
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+    
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+    
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="main">
+                <h2 class="footer logo"><img src="./images/lg.png" alt="logo" class="logo"></h2>
+                <div class="list">
+                    <ul >
+                        <li class="#"><a href="./leopard.html">Leopard</a></li>
+                        <li class="#"><a href="./department.html">Explore</a></li>
+                        <li class="#"><a href="./introduction.html">Introduction</a></li>
+                        <li class="#"><a href="./Animalssl.html">Animals</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2023 All rights reserved | SriLankaWildWonder</p>
+            </div>
+        </footer>
+
+    <script>
+        const header = {};
+        const card = {};
+        
+        fetch('yala.json')
+            .then(response => response.json())
+            .then(data => {
+                header.title = data[0].title;
+                header.titlePara = data[0].titlePara;
+                card.cardOne = data[1].cardOne;
+                card.cardOnePara = data[1].cardOnePara;
+                card.cardTwo = data[1].cardTwo;
+                card.cardTwoPara = data[1].cardTwoPara;
+                card.cardThree = data[1].cardThree;
+                card.cardThreePara = data[1].cardThreePara;
+               
+            })
+            .catch(
+                error => console.error('Error fetching data:', error)
+            )
+    </script>
+    </body>
+</section>
+<!--content
+    https://www.wikipedia.org/-->
+<!--Images
+     www.pexels.com-->
+<!--Maps
+      www.google.com/maps-->
+
+
+</html>

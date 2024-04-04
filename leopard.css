@@ -1,0 +1,413 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar */
+nav ul {
+    list-style: none;
+}
+
+.active {
+    color: rgb(122, 91, 5);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+
+}
+
+.logo {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 130px;
+    height: 130px;
+    float: left;
+
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.home a{
+    color: whitesmoke;
+    border: 1px solid;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.checkbtn {
+    color: #ffff;
+    font-size: 35px;
+    cursor: pointer;
+    float: right;
+    display: none;
+
+
+}
+
+#check {
+    display: none;
+}
+
+/*Header Content*/
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/./leopardimg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+
+
+}
+
+
+.header-content h1{
+    font-size: 10vmin;
+    color: whitesmoke;
+    padding: 20%;
+    font-weight: bold;
+    text-align: center;
+
+    
+}
+
+.ctn {
+    padding: 8px 15px;
+    background-color: rgb(122, 91, 5);
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+
+/*Venues*/
+section .Venues {
+    width: 80%;
+   
+    
+
+}
+
+.venues {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+.venues .venue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.Venues h2 {
+    text-align: center;
+    font-size: 5vmin;
+    padding: 30px;
+}
+
+.venue h3{
+    font-size: 25px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+.venue p {
+    padding: 30px;
+    font-size: 18px;
+}
+
+
+
+.venue img {
+    width: 300px;
+    height: 200px;
+    
+}
+
+.ctn {
+    padding: 8px 15px;
+    background-color: rgb(122, 91, 5);
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+
+
+/*Threats*/
+.threat img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+
+}
+
+.threat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.threats h3 {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.threats h2 {
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.threats p{
+    font-size: 20px;
+}
+.line {
+    width: 150px;
+    height: 5px;
+    background: rgb(122, 91, 5);
+    margin: 2px auto;
+    border-radius: 5px;
+
+
+}
+
+
+/*footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2rem 16vw;
+}
+
+.newslatter h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.newslatter span:nth-child(2) {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.newslatter form {
+    margin: 20px 0;
+}
+
+.newslatter form input {
+    height: 40px;
+    width: 17vw;
+    padding: 0 15px;
+    outline: none;
+}
+
+.newslatter form button {
+    height: 40px;
+    width: 5rem;
+    color: #fff;
+    background-color: red;
+    border: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.social-icons li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+.social-icons li a:hover {
+    color: white;
+}
+
+hr {
+    background-color: gray;
+    border: 1px solid gray;
+    margin: 30px 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.footer-logo {
+    letter-spacing: 2px;
+    font-size: 'Potta one', cursive;
+    text-shadow: 0 20px 6px red;
+}
+
+.links {
+    margin: 10px 0;
+    margin: 4px 0;
+}
+
+.links li a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.links li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s ease;
+}
+
+.copyright {
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+
+/* Mobile device */
+
+@media screen and (max-width: 990px) {
+    nav {
+        padding: 0px 50px;
+    }
+
+    .checkbtn {
+        display: block;
+        transition: transform .3s ease;
+        padding: 30px;
+        
+    }
+
+    img .logo {
+        position: absolute;
+        top: 25px;
+        left: 450px;
+        
+        
+        
+        
+    }
+
+    .active{
+        color: black;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 70vh;
+        background-color: rgba(122, 91, 5, 0.836);
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        
+
+
+    }
+    .nav-links{
+        display: block;
+        
+    }
+
+    nav ul li {
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /*Main Content Section*/
+    
+
+    .Venues .venues {
+        flex-direction: column;
+        margin: 20px auto;
+        
+    }
+
+    .venue img {
+        max-width: 90%;
+    }
+    /*Threats*/
+    .threat{
+        flex-direction: column;
+    }
+
+
+
+    /*footer*/
+    .footer {
+        padding: 10px;
+        
+        
+    }
+
+
+}
+
+/*Animations*/
+
+
+.ctn:hover {
+    background: black;
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.76);
+}
+
+
+a:hover{
+    color: rgb(122, 91, 5);
+}

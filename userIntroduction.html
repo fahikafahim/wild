@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/lgblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="introduction.css">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <title>SrilankaWildWonder/Introduction</title>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Srilankan Wild life introduction</title>
+    <!-- menifest link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Include alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .edit-btn {
+            background-color: rgba(0, 0, 0, 0.596);
+            color: white;
+            padding: 20px 30px;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fefefe;
+            border: 1px solid #888;
+            width: 500px;
+            padding: 30px;
+            z-index: 1000;
+        }
+
+        @font-face {
+            font-family: rosela;
+            src: url(font/Rosela.ttf);
+        }
+
+        .inputs {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            overflow-y: scroll;
+            height: 300px;
+        }
+
+        .buttons {
+            padding: 10px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="images/lg.png" alt="logo" class="logo">
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="home"><a href="leopard.html">Leopard</a></li>
+            <li class="home"><a href="department.html">Expoler</a></li>
+            <li class="home"><a href="introduction.html">Introduction</a></li>
+            <li class="home"><a href="Animalssl.html">Animals</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Home Page Header Content -->
+    <div x-data="header">
+        <header>
+            <div class="header-content">
+                <h1 x-text="headerContent" id="headerContent"></h1>
+                <h2 x-text="headerOne" id="headerOne"></h2>
+                <p x-text="headerPara" id="headerPara"></p>
+            </div>
+        </header>
+    </div>
+
+    <!--Srilanka wildlife introduction page content-->
+    <main>
+        <section class="content--" x-data="contentOneData">
+            <section class="topic">
+                <h2 x-text="contentTitleOne" id="contentTitleOne"></h2>
+                <p x-text="contentPara" id="contentPara"></p>
+            </section>
+        </section>
+
+        <section>
+            <!--Content about wildlifelocation-->
+
+
+            <section class="content" x-data="contentTwoData">
+                <h2 x-text="contentTitleTwo" id="contentTitleTwo"></h2>
+                <ul id="contentTwoList">
+
+                    <template x-for="content in contentList">
+                        <li x-text="content"></li>
+                    </template>
+                </ul>
+                <!--google map-->
+
+                <section class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126876.77301113092!2d80.31583104335938!3d6.406990799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1703673307576!5m2!1sen!2slk"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+
+            </section>
+
+    </main>
+    <!--table-->
+    <section class="table" x-data="tableData">
+        <h1 x-text="tableTitle" id="tableTitle"></h1>
+
+
+        <table>
+            <tr>
+                <th x-text="headerOne" id="headerOne"></th>
+                <th x-text="headerTwo" id="headerTwo"></th>
+                <th x-text="headerThree" id="headerThree"></th>
+            </tr>
+            <tr>
+                <td x-text="rowOne1" id="rowOne1"></td>
+                <td x-text="rowOne2" id="rowOne2"></td>
+                <td x-text="rowOne3" id="rowOne3"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowOne33" id="rowOne33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowTwo1" id="rowTwo1"></td>
+                <td x-text="rowTwo2" id="rowTwo2"></td>
+                <td x-text="rowTwo3" id="rowTwo3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowTwo33" id="rowTwo33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowThree1" id="rowThree1"></td>
+                <td x-text="rowThree2" id="rowThree2"></td>
+                <td x-text="rowThree3" id="rowThree3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowThree33" id="rowThree33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowFour1" id="rowFour1"></td>
+                <td x-text="rowFour2" id="rowFour2"></td>
+                <td x-text="rowFour3" id="rowFour3"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowFour33" id="rowFour33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowFive1" id="rowFive1"></td>
+                <td x-text="rowFive2" id="rowFive2"></td>
+                <td x-text="rowFive3" id="rowFive3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowFive33" id="rowFive33"></td>
+            </tr>
+
+
+
+        </table>
+
+        <section class="page">
+            <a href="./userIntroduction2.html">NEXT</a>
+        </section>
+
+        <button class="edit-btn" onclick="openPopup()">Edit Content</button>
+
+    </section>
+    <!-- Editing popup -->
+    <div id="popup">
+
+        <h2>Edit Content</h2><br>
+        <div class="inputs">
+
+            <input type="text" id="newheaderContent" placeholder="Enter new title" x-model="newTitle"><br><br>
+            <textarea id="newheaderPara" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newcontentTitleOne" placeholder="Enter new paragraph"
+                x-model="newParagraph"></textarea><br><br>
+            <textarea id="newcontentPara" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newcontentTitleTwo" placeholder="Enter new paragraph"
+                x-model="newParagraph"></textarea><br><br>
+            <textarea id="newcontentTwoList" placeholder="Enter new paragraph"
+                x-model="newParagraph"></textarea><br><br>
+
+            <textarea id="newtableTitle" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newheaderOne" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newheaderTwo" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newheaderThree" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+
+            <textarea id="newrowOne1" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowOne2" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowOne3" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowOne33" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowTwo1" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowTwo2" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowTwo3" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowTwo33" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+
+            <textarea id="newrowThree1" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowThree2" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowThree3" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowThree33" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFour1" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFour2" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFour3" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFour33" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFive1" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFive2" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFive3" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+            <textarea id="newrowFive33" placeholder="Enter new paragraph" x-model="newParagraph"></textarea><br><br>
+
+
+
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="saveContent()">Save</button>
+            <button onclick="clearChanges()">Clear Changes</button>
+            <button onclick="closePopup()">Cancel</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="newslatter">
+            <h2>
+                <span>Subscribe Newslatter</span>
+                <span>Subscribe Newslatter to get more updates</span>
+            </h2>
+            <form action="?">
+                <input type="email" placeholder="Enter Your email">
+                <button type="submit">Submit</button>
+            </form>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2 class="footer logo"><img src="./images/lg.png" alt="logo" class="logo"></h2>
+            <div class="list">
+                <ul>
+                    <li class="#"><a href="./leopard.html">Leopard</a></li>
+                    <li class="#"><a href="./department.html">Explore</a></li>
+                    <li class="#"><a href="./introduction.html">Introduction</a></li>
+                    <li class="#"><a href="./Animalssl.html">Animals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023 All rights reserved | SriLankaWildWonder</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const header = {};
+        const contentOneData = {};
+        const contentTwoData = {};
+        const tableData = {};
+
+
+        fetch('introduction.json')
+            .then(response => response.json())
+            .then(data => {
+                header.headerContent = data[0].headerContent;
+                header.headerOne = data[0].header;
+                header.headerPara = data[0].headerPara;
+
+                contentOneData.contentTitleOne = data[1].contentTitleOne;
+                contentOneData.contentPara = data[1].contentPara;
+
+                contentTwoData.contentTitleTwo = data[2].contentTitleTwo;
+                contentTwoData.contentList = data[2].contentList;
+
+                tableData.tableTitle = data[3].tableTitle;
+                tableData.headerOne = data[3].headerOne;
+                tableData.headerTwo = data[3].headerTwo;
+                tableData.headerThree = data[3].headerThree;
+
+                tableData.rowOne1 = data[3].rowOne1;
+                tableData.rowOne2 = data[3].rowOne2;
+                tableData.rowOne3 = data[3].rowOne3;
+                tableData.rowOne33 = data[3].rowOne3;
+
+                tableData.rowTwo1 = data[3].rowTwo1;
+                tableData.rowTwo2 = data[3].rowTwo2;
+                tableData.rowTwo3 = data[3].rowTwo3;
+                tableData.rowTwo33 = data[3].rowTwo33;
+
+                tableData.rowThree1 = data[3].rowThree1;
+                tableData.rowThree2 = data[3].rowThree2;
+                tableData.rowThree3 = data[3].rowThree3;
+                tableData.rowThree33 = data[3].rowThree33;
+
+                tableData.rowFour1 = data[3].rowFour1;
+                tableData.rowFour2 = data[3].rowFour2;
+                tableData.rowFour3 = data[3].rowFour3;
+                tableData.rowFour33 = data[3].rowFour33;
+
+                tableData.rowFive1 = data[3].rowFive1;
+                tableData.rowFive2 = data[3].rowFive2;
+                tableData.rowFive3 = data[3].rowFive3;
+                tableData.rowFive33 = data[3].rowFive33;
+
+
+
+                localStorage.setItem('header', JSON.stringify(header));
+                localStorage.setItem('contentOneData', JSON.stringify(contentOneData));
+                localStorage.setItem('contentTwoData', JSON.stringify(contentTwoData));
+                localStorage.setItem('tableData', JSON.stringify(tableData));
+
+            })
+            .catch(
+                error => console.error('Error fetching data:', error)
+            )
+
+
+        //Edit popup
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("newheaderContent").value = document.getElementById("headerContent").innerText;
+            document.getElementById("newheaderPara").value = document.getElementById("headerPara").innerText;
+            document.getElementById("newcontentTitleOne").value = document.getElementById("contentTitleOne").innerText;
+            document.getElementById("newcontentPara").value = document.getElementById("contentPara").innerText;
+            document.getElementById("newcontentTitleTwo").value = document.getElementById("contentTitleTwo").innerText;
+            document.getElementById("newcontentTwoList").value = document.getElementById("contentTwoList").innerText;
+
+            document.getElementById("newtableTitle").value = document.getElementById("tableTitle").innerText;
+            document.getElementById("newheaderOne").value = document.getElementById("headerOne").innerText;
+            document.getElementById("newheaderTwo").value = document.getElementById("headerTwo").innerText;
+            document.getElementById("newheaderThree").value = document.getElementById("headerThree").innerText;
+
+            document.getElementById("newrowOne1").value = document.getElementById("rowOne1").innerText;
+            document.getElementById("newrowOne2").value = document.getElementById("rowOne2").innerText;
+            document.getElementById("newrowOne3").value = document.getElementById("rowOne3").innerText;
+            document.getElementById("newrowOne33").value = document.getElementById("rowOne33").innerText;
+            document.getElementById("newrowTwo1").value = document.getElementById("rowTwo1").innerText;
+            document.getElementById("newrowTwo2").value = document.getElementById("rowTwo2").innerText;
+            document.getElementById("newrowTwo3").value = document.getElementById("rowTwo3").innerText;
+            document.getElementById("newrowTwo33").value = document.getElementById("rowTwo33").innerText;
+
+            document.getElementById("newrowThree1").value = document.getElementById("rowThree1").innerText;
+            document.getElementById("newrowThree2").value = document.getElementById("rowThree2").innerText;
+            document.getElementById("newrowThree3").value = document.getElementById("rowThree3").innerText;
+            document.getElementById("newrowThree33").value = document.getElementById("rowThree33").innerText;
+            document.getElementById("newrowFour1").value = document.getElementById("rowFour1").innerText;
+            document.getElementById("newrowFour2").value = document.getElementById("rowFour2").innerText;
+            document.getElementById("newrowFour3").value = document.getElementById("rowFour3").innerText;
+            document.getElementById("newrowFour33").value = document.getElementById("rowFour33").innerText;
+            document.getElementById("newrowFive1").value = document.getElementById("rowFive1").innerText;
+            document.getElementById("newrowFive2").value = document.getElementById("rowFive2").innerText;
+            document.getElementById("newrowFive3").value = document.getElementById("rowFive3").innerText;
+            document.getElementById("newrowFive33").value = document.getElementById("rowFive33").innerText;
+
+
+
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function saveContent() {
+            document.getElementById("headerContent").innerText = document.getElementById("newheaderContent").value;
+            document.getElementById("headerPara").innerText = document.getElementById("newheaderPara").value;
+            document.getElementById("contentTitleOne").innerText = document.getElementById("newcontentTitleOne").value;
+            document.getElementById("contentPara").innerText = document.getElementById("newcontentPara").value;
+            document.getElementById("contentTitleTwo").innerText = document.getElementById("newcontentTitleTwo").value;
+            document.getElementById("contentTwoList").innerText = document.getElementById("newcontentTwoList").value;
+
+            document.getElementById("tableTitle").innerText = document.getElementById("newtableTitle").value;
+            document.getElementById("headerOne").innerText = document.getElementById("newheaderOne").value;
+            document.getElementById("headerTwo").innerText = document.getElementById("newheaderTwo").value;
+            document.getElementById("headerThree").innerText = document.getElementById("newheaderThree").value;
+
+            document.getElementById("rowOne1").innerText = document.getElementById("newrowOne1").value;
+            document.getElementById("rowOne2").innerText = document.getElementById("newrowOne2").value;
+            document.getElementById("rowOne3").innerText = document.getElementById("newrowOne3").value;
+            document.getElementById("rowOne33").innerText = document.getElementById("newrowOne33").value;
+            document.getElementById("rowTwo1").innerText = document.getElementById("newrowTwo1").value;
+            document.getElementById("rowTwo2").innerText = document.getElementById("newrowTwo2").value;
+            document.getElementById("rowTwo3").innerText = document.getElementById("newrowTwo3").value;
+            document.getElementById("rowTwo33").innerText = document.getElementById("newrowTwo33").value;
+            document.getElementById("rowThree1").innerText = document.getElementById("newrowThree1").value;
+            document.getElementById("rowThree2").innerText = document.getElementById("newrowThree2").value;
+            document.getElementById("rowThree3").innerText = document.getElementById("newrowThree3").value;
+            document.getElementById("rowThree33").innerText = document.getElementById("newrowThree33").value;
+            document.getElementById("rowFour1").innerText = document.getElementById("newrowFour1").value;
+            document.getElementById("rowFour2").innerText = document.getElementById("newrowFour2").value;
+            document.getElementById("rowFour3").innerText = document.getElementById("newrowFour3").value;
+            document.getElementById("rowFour33").innerText = document.getElementById("newrowFour33").value;
+            document.getElementById("rowFive1").innerText = document.getElementById("newrowFive1").value;
+            document.getElementById("rowFive2").innerText = document.getElementById("newrowFive2").value;
+            document.getElementById("rowFive3").innerText = document.getElementById("newrowFive3").value;
+            document.getElementById("rowFive33").innerText = document.getElementById("newrowFive33").value;
+
+
+            closePopup();
+        }
+
+        function clearChanges() {
+            document.getElementById("newheaderContent").value = document.getElementById("headerContent").innerText;
+            document.getElementById("newheaderPara").value = document.getElementById("headerPara").innerText;
+            document.getElementById("newcontentTitleOne").value = document.getElementById("contentTitleOne").innerText;
+            document.getElementById("newcontentPara").value = document.getElementById("contentPara").innerText;
+            document.getElementById("newcontentTitleTwo").value = document.getElementById("contentTitleTwo").innerText;
+            document.getElementById("newcontentTwoList").value = document.getElementById("contentTwoList").innerText;
+
+            document.getElementById("newtableTitle").value = document.getElementById("tableTitle").innerText;
+            document.getElementById("newheaderOne").value = document.getElementById("headerOne").innerText;
+            document.getElementById("newheaderTwo").value = document.getElementById("headerTwo").innerText;
+            document.getElementById("newheaderThree").value = document.getElementById("headerThree").innerText;
+
+            document.getElementById("newrowOne1").value = document.getElementById("rowOne1").innerText;
+            document.getElementById("newrowOne2").value = document.getElementById("rowOne2").innerText;
+            document.getElementById("newrowOne3").value = document.getElementById("rowOne3").innerText;
+            document.getElementById("newrowOne33").value = document.getElementById("rowOne33").innerText;
+            document.getElementById("newrowTwo1").value = document.getElementById("rowTwo1").innerText;
+            document.getElementById("newrowTwo2").value = document.getElementById("rowTwo2").innerText;
+            document.getElementById("newrowTwo3").value = document.getElementById("rowTwo3").innerText;
+            document.getElementById("newrowTwo33").value = document.getElementById("rowTwo33").innerText;
+
+            document.getElementById("newrowThree1").value = document.getElementById("rowThree1").innerText;
+            document.getElementById("newrowThree2").value = document.getElementById("rowThree2").innerText;
+            document.getElementById("newrowThree3").value = document.getElementById("rowThree3").innerText;
+            document.getElementById("newrowThree33").value = document.getElementById("rowThree33").innerText;
+            document.getElementById("newrowFour1").value = document.getElementById("rowFour1").innerText;
+            document.getElementById("newrowFour2").value = document.getElementById("rowFour2").innerText;
+            document.getElementById("newrowFour3").value = document.getElementById("rowFour3").innerText;
+            document.getElementById("newrowFour33").value = document.getElementById("rowFour33").innerText;
+            document.getElementById("newrowFive1").value = document.getElementById("rowFive1").innerText;
+            document.getElementById("newrowFive2").value = document.getElementById("rowFive2").innerText;
+            document.getElementById("newrowFive3").value = document.getElementById("rowFive3").innerText;
+            document.getElementById("newrowFive33").value = document.getElementById("rowFive33").innerText;
+            closePopup();
+        }
+
+        // Ensure the popup is closed initially
+        closePopup();
+    </script>
+    <!--content
+    https://www.wikipedia.org/-->
+    <!--Images
+     www.pexels.com-->
+    <!--Maps
+      www.google.com/maps-->
+
+
+</body>
+
+</html>

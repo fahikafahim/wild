@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/admin.jpg);
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 150px;
+    color: #fff;
+  }
+
+  #loginDetails {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #loginDetails h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #loginTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+  }
+
+  #loginTable th,
+  #loginTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+    text-align: left;
+  }
+
+  #loginTable th {
+    background-color: #f2f2f2;  
+  }
+
+  #loginTable td {
+    background-color: #fff;
+  }
+  
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    background:transparent;
+    backdrop-filter:blur(20px) ;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.header ion-icon{
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+.details {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.card {
+    /* background:url(loginsmall.jpg); */
+    background:transparent;
+    backdrop-filter:blur(50px) ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(202, 198, 198, 0.1);
+
+}
+
+.card h2 {
+    font-size: 24px;
+    color:white;
+    margin-top: 0;
+    text-align: center;
+}
+
+.card button {
+    padding: 10px;
+    border-radius: 50px;
+} 
+
+.card ul {
+    color: white;
+    align-items: center;
+    justify-content:center;
+    margin-left: 450px;
+    font-size: 20px;
+    list-style: square;
+} 
+.logout-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px soild;
+    border-color: white;
+    outline: none;
+    border-radius:6px ;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 600;
+    margin: 30px;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Navigation bar */
+
+nav ul {
+    list-style: none;
+}
+
+.active {
+    color: rgb(122, 91, 5);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+
+}
+
+.logo {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 130px;
+    height: 130px;
+    float: left;
+
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.home a {
+    color: whitesmoke;
+    border: 1px solid;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login a{
+    display: none;
+}
+.checkbtn {
+    color: #ffff;
+    font-size: 35px;
+    cursor: pointer;
+    float: right;
+    display: none;
+
+
+}
+
+
+#check {
+    display: none;
+}
+
+.icons a {
+    font-size: 45px;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 20px;
+
+
+}
+
+.icons a:hover {
+    color: var(--br);
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="index.html"><img src="./images/lg.png" alt="logo" class="logo"></a>
+    <ul class="nav-links">
+        <li class="home"><a href="./userLepoard.html">Leopard</a></li>
+        <li class="home"><a href="./userDepartment.html">Explore</a></li>
+        <li class="home"><a href="./userIntroduction.html">Introduction</a></li>
+        <li class="home"><a href="./userAnimal.html">Animals</a></li>
+        <li class="login"><a href="./login.html">Login</a></li>
+    </ul>
+    <div class="icons">
+        <a href="./index.html" class="fas fa-home"></a>
+        <a href="./login.html" class="fas fa-user"></a>
+    </div>
+</nav>
+  <h1>Welcome to Admin Dashboard</h1>
+  
+  <div id="loginDetails">
+    <h2>Login Details</h2>
+    <!-- <ul id="loginTable"></ul> -->
+    <table id="loginTable">
+      <thead>
+        <tr>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Login details will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="card">
+    <h2>Newsletter Subscriptions</h2>
+
+    <ul id="subscriptionsList"></ul>
+</div>
+
+  <script>
+    // Retrieve login details from local storage
+    var emailOrUsername = localStorage.getItem('users');
+    
+    if (emailOrUsername) {
+      displayLoginDetails(emailOrUsername);
+    } else {
+      console.log('No login details found.');
+    }
+
+    // Display login details as a table
+    function displayLoginDetails(emailOrUsername) {
+      var table = document.getElementById('loginTable');
+      var tbody = table.querySelector('tbody');
+      var row = tbody.insertRow();
+      var cell1 = row.insertCell(0);
+      
+      cell1.textContent = emailOrUsername;
+     
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function() { 
+    // Gets the subscriptions list element
+    const subscriptionsList = document.getElementById('subscriptionsList'); 
+
+    // Retrieve subscriptions from localStorage and display them
+    //// Function to display subscriptions
+    function displaySubscriptions() { 
+        // Clears the existing content of subscriptions list
+        subscriptionsList.innerHTML = ''; 
+        // Gets subscriptions from local storage
+        const storedSubscriptions = localStorage.getItem('newsletterSubscriptions'); 
+        // Checks if subscriptions exist in local storage
+        if (storedSubscriptions) { 
+            // Parses the subscriptions from JSON
+            const subscriptions = JSON.parse(storedSubscriptions); 
+            // Iterates through each subscription email
+            subscriptions.forEach(function(email) { 
+                // Creates a list item element
+                const listItem = document.createElement('li'); 
+                // Sets the text content of the list item to the email
+                listItem.textContent = email; 
+                // Appends the list item to the subscriptions list
+                subscriptionsList.appendChild(listItem); 
+            });
+        }
+    }
+    // Calls the function to initially display subscriptions
+    displaySubscriptions(); 
+});
+  </script>
+</body>
+</html>

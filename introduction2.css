@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+    justify-content: right;
+    padding-right: 30px;
+    padding-bottom: 40px;
+
+
+}
+
+.content-2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/minneriyana.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    color: whitesmoke;
+}
+
+.content-2 h2 {
+    font-size: 5vmin;
+    margin: 0px auto;
+    color: #ffff;
+    width: 50%;
+    margin-left: 50px;
+
+}
+
+.content-2 ul {
+    font-size: 3vmin;
+    color: #ffff;
+    justify-content: center;
+    padding-left: 10px;
+    width: 40%;
+
+}
+
+.map-- {
+    padding-top: 10%;
+    padding-left: 10px;
+    height: 500px;
+    width: 100%;
+    justify-content: right;
+}
+
+/*table*/
+table {
+    border: 1px solid;
+    width: 80%;
+    display: grid; 
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: -1px 12px 12px 6px rgb(0,0,0,0.5);
+
+}
+
+
+th {
+    border: 1px solid;
+    height: 60px;
+    border-collapse: collapse;
+    background-color: rgb(122, 91, 5);
+    padding: 20px;
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+    
+    height: 45px;
+    padding: 15px;
+    font-size: 18px;
+
+}
+
+
+.table h1 {
+    color: rgb(122, 91, 5);
+    font-size: 5vmin;
+    padding: 10px;
+}
+
+
+
+h1 {
+
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+
+}
+
+h2 {
+    color: rgb(122, 91, 5);
+
+}
+.page{
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+.page a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(122, 91, 5);
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.page a:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*footer*/
+.footer{
+    background-color: rgb(122, 91, 5);
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: -20px;
+    
+}
+
+.social{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social a{
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid beige;
+    width: 25px;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.social a:hover{
+    background-color: rgba(122, 91, 5, 0.493);
+}
+
+
+.footer ul{
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+.footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer ul li a:hover{
+    counter-reset: rgba(122, 91, 5, 0.493);
+}
+.paragraph
+{
+    text-align: center;
+    padding-bottom: 30px;
+    
+
+}
+.next span{
+    text-align: left;
+    color: black;
+    font-size: 30px;
+}
+
+tr:hover {
+    color: whitesmoke;
+    background-color: rgb(153, 130, 27);
+    transform: scale(1.5);
+    transition: transform 300ms ease-in;
+    
+}
+
+@media screen and (max-width: 990px) {
+    iframe{
+        display: block;
+        height: 30vh;
+    
+        
+    }
+    .content-2 {
+        flex-direction: column;
+        
+}
+.content-2 h2 ,.content-2 ul{
+    padding-top: 50px;
+    text-align: center;
+}
+}

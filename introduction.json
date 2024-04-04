@@ -1,0 +1,51 @@
+[
+    {
+        "headerContent":"Explore the Wild Wonders of",
+        "headerOne":"Sri Lanka",
+        "headerPara":"Welcome to a Journey of Discovery"
+
+    },
+    {
+        "contentTitleOne":"Discover Wildlife Locations in Sri Lanka",
+        "contentPara":"Sri Lanka's wildlife destinations are a testament to the country's ecological diversity. Sinharaja Forest Reserve enchants with its lush rainforest and rare species, while Yala National Park's varied landscapes host leopards and elephants. Wilpattu, the largest park, features natural lakes and abundant wildlife, and Udawalawe's vast reservoir is a haven for elephants. Horton Plains captivates with montane grasslands, and Minneriya's annual elephant 'Gathering' is a spectacle. Kumana, with lagoons and mangroves, is a paradise for bird watchers. Together, these locations offer a rich tapestry of flora and fauna, making Sri Lanka a compelling destination for wildlife enthusiasts."
+    },
+    {
+        "contentTitleTwo":"Sinharaja Rainforests Reserve",
+        "contentList":[
+            "Location:Southwest lowland wet zone of Sri Lanka.",
+            "Size: Approximately 11,187 hectares.",
+            "Designation: UNESCO World Heritage Site.",
+            "Attractions: Towering trees, rare orchids, and lush canopies.",
+            "Activities: Guided treks for nature enthusiasts and researchers",
+            "Conservation: Vital role in preserving Sri Lanka's ecological heritage."
+            
+        ]
+    },
+    {
+        "tableTitle":"Key Highlights at a Glance",
+        "headerOne":"Category",
+        "headerTwo":"Example Species",
+        "headerThree":"Intresting Facts",
+        "rowOne1":"Mammals",
+        "rowOne2":"Purple-faced Langur, Indian Muntjac",
+        "rowOne3":"- Purple-faced Langur is highly social, living in groups and displaying intricate social behaviors.",
+        "rowOne33":"- Indian Muntjac is known for its distinctive barking sound, which it uses to communicate with other individuals.",
+        "rowTwo1":"Birds",
+        "rowTwo2":" Sri Lanka Blue Magpie, Layard's Parakeet",
+        "rowTwo3":"- Sri Lanka Blue Magpie is known for its intelligence and vocal mimicry skills.",
+        "rowTwo33":"- Layard's Parakeet is a cavity-nesting species, utilizing tree hollows for nesting.",
+        "rowThree1":" Amphibians ",
+        "rowThree2":"Wrinkled Frog, Torrent Toad ",
+        "rowThree3":"- Wrinkled Frog exhibits elaborate courtship rituals, involving calling and visual displays.",
+        "rowThree33":"- Torrent Toad is adapted to fast-flowing streams, with flattened bodies for stability in water.",
+        "rowFour1":"Reptiles ",
+        "rowFour2":"Green Pit Viper, Hump-nosed Lizard",
+        "rowFour3":"- Green Pit Viper has heat-sensitive pits on its head for locating prey, often small mammals or birds. ",
+        "rowFour33":"- Hump-nosed Lizard is known for its unique nasal appendage, which aids in camouflaging among leaf litter.",
+        "rowFive1":" Butterflies ",
+        "rowFive2":" Sri Lanka Tree Nymph, Blue Mormon",
+        "rowFive3":"- Sri Lanka Tree Nymph undergoes complete metamorphosis, with caterpillar, pupa, and adult stages in its life cycle. ",
+        "rowFive33":"- Blue Mormon is known for its long lifespan as an adult butterfly, sometimes living up to several  months. "
+    }
+
+]

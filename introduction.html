@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/lgblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="introduction.css">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <title>SrilankaWildWonder/Introduction</title>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Srilankan Wild life introduction</title>
+    <!-- menifest link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Include alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html"><img src="./images/lg.png" alt="logo" class="logo"></a>
+        <ul class="nav-links">
+            <li class="home"><a href="./leopard.html">Leopard</a></li>
+            <li class="home"><a href="./department.html">Explore</a></li>
+            <li class="home"><a href="./introduction.html">Introduction</a></li>
+            <li class="home"><a href="./Animalssl.html">Animals</a></li>
+            <li class="login"><a href="./login.html">Login</a></li>
+        </ul>
+        <div class="icons">
+            <a href="./index.html" class="fas fa-home"></a>
+            <a href="./login.html" class="fas fa-user"></a>
+        </div>
+    </nav>
+
+    <!-- Home Page Header Content -->
+    <div x-data="header">
+        <header>
+            <div class="header-content">
+                <h1 x-text="headerContent"></h1>
+                <h2 x-text="headerOne"></h2>
+                <p x-text="headerPara"></p>
+            </div>
+        </header>
+    </div>
+
+    <!--Srilanka wildlife introduction page content-->
+    <main>
+        <section class="content--" x-data="contentOneData">
+            <section class="topic">
+                <h2 x-text="contentTitleOne"></h2>
+                <p x-text="contentPara"></p>
+            </section>
+        </section>
+
+        <section>
+            <!--Content about wildlifelocation-->
+
+
+            <section class="content" x-data="contentTwoData">
+                <h2 x-text="contentTitleTwo"></h2>
+                <ul>
+
+                    <template x-for="content in contentList">
+                        <li x-text="content"></li>
+                    </template>
+                </ul>
+                <!--google map-->
+
+                <section class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126876.77301113092!2d80.31583104335938!3d6.406990799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1703673307576!5m2!1sen!2slk"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+
+            </section>
+
+    </main>
+    <!--table-->
+    <section class="table" x-data="tableData">
+        <h1 x-text="tableTitle"></h1>
+
+
+        <table>
+            <tr>
+                <th x-text="headerOne"></th>
+                <th x-text="headerTwo"></th>
+                <th x-text="headerThree"></th>
+            </tr>
+            <tr>
+                <td x-text="rowOne1"></td>
+                <td x-text="rowOne2"></td>
+                <td x-text="rowOne3"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowOne33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowTwo1"></td>
+                <td x-text="rowTwo2"></td>
+                <td x-text="rowTwo3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowTwo33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowThree1"></td>
+                <td x-text="rowThree2"></td>
+                <td x-text="rowThree3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowThree33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowFour1"></td>
+                <td x-text="rowFour2"></td>
+                <td x-text="rowFour3"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowFour33"></td>
+            </tr>
+            <tr>
+                <td x-text="rowFive1"></td>
+                <td x-text="rowFive2"></td>
+                <td x-text="rowFive3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td x-text="rowFive33"></td>
+            </tr>
+
+
+
+        </table>
+
+        <section class="page">
+            <a href="introduction2.html">NEXT</a>
+        </section>
+
+
+
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="newslatter">
+            <h2>
+                <span>Subscribe Newslatter</span>
+                <span>Subscribe Newslatter to get more updates</span>
+            </h2>
+            <section id="newsletter" class="col-2">
+                <form id="subscribeForm">
+                    <input type="email" id="emailInput" placeholder="Enter your email">
+
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="main">
+            <h2 class="footer logo"><img src="./images/lg.png" alt="logo" class="logo"></h2>
+            <div class="list">
+
+
+
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li class="#"><a href="./leopard.html">Leopard</a></li>
+                    <li class="#"><a href="./department.html">Explore</a></li>
+                    <li class="#"><a href="./introduction.html">Introduction</a></li>
+                    <li class="#"><a href="./Animalssl.html">Animals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023 All rights reserved | SriLankaWildWonder</p>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        const header = {};
+        const contentOneData = {};
+        const contentTwoData = {};
+        const tableData = {};
+
+
+        fetch('introduction.json')
+            .then(response => response.json())
+            .then(data => {
+                header.headerContent = data[0].headerContent;
+                header.headerOne = data[0].header;
+                header.headerPara = data[0].headerPara;
+
+                contentOneData.contentTitleOne = data[1].contentTitleOne;
+                contentOneData.contentPara = data[1].contentPara;
+
+                contentTwoData.contentTitleTwo = data[2].contentTitleTwo;
+                contentTwoData.contentList = data[2].contentList;
+
+                tableData.tableTitle = data[3].tableTitle;
+                tableData.headerOne = data[3].headerOne;
+                tableData.headerTwo = data[3].headerTwo;
+                tableData.headerThree = data[3].headerThree;
+
+                tableData.rowOne1 = data[3].rowOne1;
+                tableData.rowOne2 = data[3].rowOne2;
+                tableData.rowOne3 = data[3].rowOne3;
+                tableData.rowOne33 = data[3].rowOne3;
+
+                tableData.rowTwo1 = data[3].rowTwo1;
+                tableData.rowTwo2 = data[3].rowTwo2;
+                tableData.rowTwo3 = data[3].rowTwo3;
+                tableData.rowTwo33 = data[3].rowTwo33;
+
+                tableData.rowThree1 = data[3].rowThree1;
+                tableData.rowThree2 = data[3].rowThree2;
+                tableData.rowThree3 = data[3].rowThree3;
+                tableData.rowThree33 = data[3].rowThree33;
+
+                tableData.rowFour1 = data[3].rowFour1;
+                tableData.rowFour2 = data[3].rowFour2;
+                tableData.rowFour3 = data[3].rowFour3;
+                tableData.rowFour33 = data[3].rowFour33;
+
+                tableData.rowFive1 = data[3].rowFive1;
+                tableData.rowFive2 = data[3].rowFive2;
+                tableData.rowFive3 = data[3].rowFive3;
+                tableData.rowFive33 = data[3].rowFive33;
+
+
+
+                localStorage.setItem('header', JSON.stringify(header));
+                localStorage.setItem('contentOneData', JSON.stringify(contentOneData));
+                localStorage.setItem('contentTwoData', JSON.stringify(contentTwoData));
+                localStorage.setItem('tableData', JSON.stringify(tableData));
+
+            })
+            .catch(
+                error => console.error('Error fetching data:', error)
+            )
+
+        //NewsLatter Function
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Gets the email input element
+            const emailInput = document.getElementById('emailInput');
+            // Gets the subscription form element
+            const subscribeForm = document.getElementById('subscribeForm');
+
+            subscribeForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                // Gets the trimmed value of the email input
+                const email = emailInput.value.trim();
+                // Checks if email is not empty
+                if (email) {
+                    // Gets existing subscriptions from local storage or initializes an empty array
+                    let subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || [];
+                    // Adds the new email to the subscriptions array
+                    subscriptions.push(email);
+                    // Stores the updated subscriptions array in local storage
+                    localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                    // Clears the email input field
+                    emailInput.value = '';
+                    // Alert the user about successful subscription
+                    alert('You have successfully subscribed!');
+                }
+            });
+
+            // Initialize subscriptions from localStorage
+            //// Immediately invoked function expression to initialize subscriptions
+            (function init() {
+                // Gets subscriptions from local storage
+                const storedSubscriptions = localStorage.getItem('newsletterSubscriptions');
+                // Checks if subscriptions exist in local storage
+                if (storedSubscriptions) {
+                    // Parses the subscriptions from JSON
+                    const subscriptions = JSON.parse(storedSubscriptions);
+                    // Logs the subscriptions to the console
+                    console.log(subscriptions);
+                }
+            })();
+        });
+
+    </script>
+    <!--content
+    https://www.wikipedia.org/-->
+    <!--Images
+     www.pexels.com-->
+    <!--Maps
+      www.google.com/maps-->
+
+
+</body>
+
+</html>

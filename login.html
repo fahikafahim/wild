@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="login.css">
+    <!--goggle fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Beau+Rivage&family=Elsie:wght@900&family=Great+Vibes&family=Lilita+One&family=Merriweather:ital,wght@0,300;1,300&family=Rubik+Maps&family=Rubik+Mono+One&family=Rubik+Scribble&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Login & Registration </title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html"><img src="./images/lg.png" alt="logo" class="logo"></a>
+            <ul class= "nav-links">
+                
+                <li class="home"><a href="./leopard.html">Leopard</a></li>
+                <li class="home"><a href="./department.html">Expoler</a></li>
+                <li class="home"><a href="./introduction.html">Introduction</a></li>
+                <li class="home"><a href="./Animalssl.html">Animals</a></li>
+                
+
+            </ul>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="register()">Sign Up</button>
+                <button class="btn" id="registerBtn" onclick="login()">Sign In</button>
+                
+            </div>
+        </nav>
+
+<!-------------------------- Form box ------------------------------->
+        <div class="form-box">
+        <!--------------------- Login Form ------------------------->
+        <!-- <div class="login-container" id="login" x-data="logiData()"> -->
+        <form id="login" class="login-container" x-data="loginData()">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+
+
+            <div class="input-box">
+                <input type="text" class="input-feild" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" class="input-feild" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+
+            <div class="input-box">
+                <!-- <input type="submit" class="submit" value="Sign In"> -->
+                <input type="submit" class="submit" value="Sign In" onclick="event.preventDefault(); Login();">
+            </div>
+
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check">Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">|Forget Password?</a></label>
+                </div>
+            </div>
+
+
+        </form>
+
+            <!------------ Registration Form ----------------->
+            <!-- <div class="register-container" id="register"> -->
+            <form id="register" class="register-container" x-data="registerData()">
+                <div class="top">
+                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+
+
+
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-feild" placeholder="Firstname" id="Firstname">
+                        <i class="bx bx-user"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" class="input-feild" placeholder="Lastname" id="Lastname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-feild" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" class="input-feild" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+    
+                <div class="input-box">
+                    <!-- <input type="submit" class="submit" value="Register"> -->
+                    <input type="submit" class="submit" value="Register" onclick="event.preventDefault(); Register();" id="submit">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & Conditions</a></label>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+        
+    </div>
+    </div>
+<script src="./login.js"></script>
+</body>
+
+</html>  

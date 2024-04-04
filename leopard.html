@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="leopard.css">
+    <!--goggle fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Beau+Rivage&family=Elsie:wght@900&family=Great+Vibes&family=Lilita+One&family=Merriweather:ital,wght@0,300;1,300&family=Rubik+Maps&family=Rubik+Mono+One&family=Rubik+Scribble&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <!--remixicons links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <title>SrilankaWildWonder/Leopardpage</title>
+    <!--footer icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menifest link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Include alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="images/lg.png" alt="logo" class="logo">
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="home"><a href="leopard.html">Leopard</a></li>
+            <li class="home"><a href="department.html">Expoler</a></li>
+            <li class="home"><a href="introduction.html">Introduction</a></li>
+            <li class="home"><a href="Animalssl.html">Animals</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <header class="header-content">
+        <h1>Leopards of Sri Lanka</h1>
+    </header>
+
+    <div x-data="venueData">
+        <section class="Venues">
+            <h2 x-text="venueTitle"></h2>
+            <section class="line"></section>
+            <!-- Descriptions of at least three venues where Leopard is found in Sri Lanka -->
+            <section class="venues">
+                <section class="venue">
+                    <h3 x-text="venueOne"></h3>
+                    <img src="images/venue1.jpeg" alt="Venue 1 Image">
+
+                    <p x-text="venueOnePara"></p>
+                    <a href="https://www.bing.com/ck/a?!&&p=03d04e9e3df8554cJmltdHM9MTcwNDY3MjAwMCZpZ3VpZD0xYWQ4MTZiNy0zM2ZkLTYyNjgtMjZlMC0wNTk1MzJhNzYzZDYmaW5zaWQ9NTI2MA&ptn=3&ver=2&hsh=3&fclid=1ad816b7-33fd-6268-26e0-059532a763d6&psq=yala+national+park&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvWWFsYV9OYXRpb25hbF9QYXJr&ntb=1"
+                        class="ctn">Learn More</a>
+                </section>
+
+                <section class="venue">
+                    <h3 x-text="venueTwo"></h3>
+                    <img src="images/venue3.jpeg" alt="Venue 3 Image">
+
+                    <p x-text="venueTwoPara"></p>
+                    <a href="https://www.bing.com/ck/a?!&&p=c93a592fa468dc92JmltdHM9MTcwNDY3MjAwMCZpZ3VpZD0xYWQ4MTZiNy0zM2ZkLTYyNjgtMjZlMC0wNTk1MzJhNzYzZDYmaW5zaWQ9NTI0MA&ptn=3&ver=2&hsh=3&fclid=1ad816b7-33fd-6268-26e0-059532a763d6&psq=horton+plains+national+park&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSG9ydG9uX1BsYWluc19OYXRpb25hbF9QYXJr&ntb=1"
+                        class="ctn">Learn More</a>
+                </section>
+                <section class="venue">
+                    <h3 x-text="venue3"></h3>
+                    <img src="images/venue 4.jpg" alt="Venue 4 Image">
+
+                    <p x-text="venue3Para"></p>
+                    <a href="https://www.bing.com/ck/a?!&&p=eda0226c53e0f82aJmltdHM9MTcwNDY3MjAwMCZpZ3VpZD0xYWQ4MTZiNy0zM2ZkLTYyNjgtMjZlMC0wNTk1MzJhNzYzZDYmaW5zaWQ9NTI0OA&ptn=3&ver=2&hsh=3&fclid=1ad816b7-33fd-6268-26e0-059532a763d6&psq=Udawalawe+National+Park&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVWRhd2FsYXdlX05hdGlvbmFsX1Bhcms&ntb=1"
+                        class="ctn">Learn More</a>
+                </section>
+            </section>
+        </section>
+    </div>
+
+
+    <!--Threats-->
+    <div x-data="threatData">
+        <section class="threats">
+            <h2 x-text="threatTitle"></h2>
+            <section class="line"></section>
+            <!-- Threat 1 -->
+            <h3 x-text="threat1"></h3>
+            <section class="threat">
+                <img src="images/threat1.jpeg" alt="Threat 1 Image">
+                <p x-text="threat1Para"></p>
+            </section>
+            <!-- Threat 2 -->
+            <h3 x-text="threat2"></h3>
+            <section class="threat">
+                <img src="images/threat2.jpeg" alt="Threat 2 Image">
+                <p x-text="threat2Para"></p>
+            </section>
+            <!-- Threat 3 -->
+            <h3 x-text="threat3"></h3>
+            <section class="threat">
+                <img src="images/threat3.jpeg" alt="Threat 3 Image">
+                <p x-text="threat3Para"></p>
+            </section>
+        </section>
+        
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="newslatter">
+            <h2>
+                <span>Subscribe Newslatter</span>
+                <span>Subscribe Newslatter to get more updates</span>
+            </h2>
+            <form action="?">
+                <input type="email" placeholder="Enter Your email">
+                <button type="submit">Submit</button>
+            </form>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2 class="footer logo"><img src="./images/lg.png" alt="logo" class="logo"></h2>
+            <div class="list">
+                <ul >
+                    <li class="#"><a href="./leopard.html">Leopard</a></li>
+                    <li class="#"><a href="./department.html">Explore</a></li>
+                    <li class="#"><a href="./introduction.html">Introduction</a></li>
+                    <li class="#"><a href="./Animalssl.html">Animals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2023 All rights reserved | SriLankaWildWonder</p>
+        </div>
+    </footer>
+    <script>
+        const venueData = {};
+        const threatData = {};
+
+        fetch('leopard.json')
+            .then(response => response.json())
+            .then(data => {
+                venueData.venueTitle = data[0].venueTitle;
+                venueData.venueOne = data[0].venueOne;
+                venueData.venueOnePara = data[0].venueOnePara;
+                venueData.venueTwo = data[0].venueTwo;
+                venueData.venueTwoPara = data[0].venueTwoPara;
+                venueData.venue3 = data[0].venue3;
+                venueData.venue3Para = data[0].venue3Para;
+
+
+                threatData.threatTitle = data[1].threatTitle;
+                threatData.threat1 = data[1].threat1;
+                threatData.threat1Para = data[1].threat1Para;
+                threatData.threat2 = data[1].threat2;
+                threatData.threat2Para = data[1].threat2Para;
+                threatData.threat3 = data[1].threat3;
+                threatData.threat3Para = data[1].threat3Para;
+
+
+                localStorage.setItem('venueData',JSON.stringify(venueData));
+                localStorage.setItem('threatData',JSON.stringify(threatData));
+                
+            })
+            .catch(
+                error => console.error('Error fetching data:', error)
+            )
+    </script>
+
+
+
+
+</body>
+<!--content
+    https://www.wikipedia.org/-->
+<!--Images
+     www.pexels.com-->
+<!--Maps
+      www.google.com/maps-->
+
+
+</html> 

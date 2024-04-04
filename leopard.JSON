@@ -1,0 +1,20 @@
+[
+    {
+        "venueTitle": "Leopard Venues",
+        "venueOne": "Yala National Park",
+        "venueOnePara":"Yala National Park is a renowned leopard sanctuary, providing a diverse habitat for these majestic creatures. The park's landscape offers a mix of dense forests, grasslands, and water bodies, creating an ideal environment for leopards to thrive.",
+        "venueTwo":"Horton National Park",
+        "venueTwoPara":"Famous for World's End, a sheer cliff with a breathtaking 880-meter drop. Home to unique fauna like the Sri Lankan sambar deer and purple-faced langur. Baker's Falls, a picturesque waterfall, is another attraction within the park.",
+        "venue3":"UdawalaweNational Park",
+        "venue3Para":"Created to provide a sanctuary for wild animals displaced by the construction of the Udawalawe Reservoir. The park is renowned for its large population of Asian elephants. Birdwatchers can spot various species, including the endemic Sri Lanka spurfowl."
+    },
+    {
+        "threatTitle":"Threats to Leopards",
+        "threat1":"Human-Wildlife Conflict",
+        "threat1Para":"Human-wildlife conflict poses a significant threat to leopard populations. As human settlements expand into leopard habitats, conflicts arise over territory and resources. This often leads to retaliatory killings and habitat destruction, endangering the leopard population.",
+        "threat2":"Illegal Wildlife Trade",
+        "threat2Para":"The illegal wildlife trade, driven by demand for leopard skins, bones, and other body parts, poses a severe threat to leopards. Poaching for the illegal market not only reduces leopard numbers but also disrupts the ecological balance in their habitats.",
+        "threat3":"Habitat Loss and Fragmentation",
+        "threat3Para":"Rapid urbanization, deforestation, and land fragmentation are major threats to leopard habitats. As natural landscapes diminish, leopards face challenges in finding suitable territories and prey, leading to population decline."
+    }
+]                         
